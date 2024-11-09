@@ -23,7 +23,7 @@ const Card = ({
         onClick={() => setShowDescription(!showDescription)}
         className='w-[95%] h-[95%] m-auto  text-white absolute rounded-lg backdrop-blur-2xl bg-black/50 flex flex-col justify-center gap-y-2 p-10 cursor-pointer'
       >
-        <h1 className='text-4xl'>{movie.title}</h1>
+        <h1 className='text-2xl'>{movie.title}</h1>
         <div className='flex items-center gap-x-2 '>
           <span className='text-lg'>Genres:</span>
           <span className='font-semibold text-red-600 space-x-1'>
@@ -42,7 +42,9 @@ const Card = ({
         </span>
         <p className='flex flex-col gap-y-1 '>
           <span className='text-red-400'>Summary</span>
-          <span className='first-letter:pl-2 '>{movie.overview}</span>
+          <span className='first-letter:pl-2  line-clamp-6 '>
+            {movie.overview}
+          </span>
         </p>
       </motion.div>
       <img

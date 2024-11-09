@@ -19,3 +19,5 @@ export enum OriginalLanguage {
   Fr = 'fr',
   Ja = 'ja',
 }
+
+export type MovieCategory = 'NowPlaying' | 'TopRated' | 'Popular' | 'UpComing';
